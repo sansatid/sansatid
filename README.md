@@ -1,6 +1,6 @@
 # Hello World, i'm Chang, be very welcome
 
-![](https://github-readme-stats.vercel.app/api?username=sansatid&theme=merko&hide_border=false&include_all_commits=false&count_private=false)<br/>
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=sansatid&theme=dark&show_icons=true)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sansatid&layout=compact&theme=radical&hide=swift,c%23)](https://github.com/anuraghazra/github-readme-stats)
 
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/https://www.facebook.com/share/18Jpn8jUmU/?mibextid=wwXIfr) 
