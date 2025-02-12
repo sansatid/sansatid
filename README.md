@@ -1,8 +1,7 @@
 # Hello World, i'm Chang, be very welcome
 
 # 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=sansatid&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
-[![sansatid's GitHub stats](https://github-readme-stats.vercel.app/api?username=sansatid&theme=dark&hide_border=false&include_all_commits=false&count_private=false)](https://github.com/anuraghazra/github-readme-stats)
+![](https://github-readme-stats.vercel.app/api?username=sansatid&theme=radical&hide_border=false&include_all_commits=false&count_private=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=sansatid&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
 ## 🌐 Socials:
