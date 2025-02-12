@@ -1,7 +1,7 @@
 # Hello World, i'm Chang, be very welcome
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=sansatid&theme=transparent&show_icons=true)
-[![GitHub Streak](https://streak-stats.demolab.com?user=sansatid&theme=transparent&card_width=400&card_height=170)](https://git.io/streak-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sansatid)](https://github.com/anuraghazra/github-readme-stats)
 
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
