@@ -2,7 +2,7 @@
 
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=sansatid&theme=merko&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=sansatid&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sansatid&layout=compact&theme=radical&hide=swift,c%23)](https://github.com/anuraghazra/github-readme-stats)
 
 ## 🌐 Socials:
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/https://www.facebook.com/share/18Jpn8jUmU/?mibextid=wwXIfr) 
