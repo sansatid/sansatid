@@ -1,6 +1,6 @@
 # Hello World, i'm Chang, be very welcome
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=sansatid&theme=transparent&show_icons=true&card_width=300)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=sansatid&theme=transparent&show_icons=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sansatid&theme=transparent&layout=compact&langs_count=10)
 
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
