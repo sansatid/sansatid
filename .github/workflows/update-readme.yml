@@ -2,12 +2,13 @@ name: Update README
 
 on:
   schedule:
-    - cron: "0 * * * *" # ทุกชั่วโมง
+    - cron: "0 * * * *"  # ทุกชั่วโมง
   workflow_dispatch:
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -16,7 +17,7 @@ jobs:
         uses: anuraghazra/github-readme-stats@master
         with:
           username: sansatid
-          hide: kotlin,java,vue,llvm
+          hide: kotlin,java,vue,llvm  # ซ่อนภาษาเหล่านี้
           layout: compact
           theme: transparent
           hide_border: true
