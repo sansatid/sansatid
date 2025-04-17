@@ -1,9 +1,13 @@
 name: Update README with top languages
 
 on:
-  schedule:
-    - cron: "0 */6 * * *" # รันทุก 6 ชั่วโมง
-  workflow_dispatch:
+  push:
+    branches:
+      - main  # เมื่อมีการ push ไปยัง main branch
+  pull_request:
+    branches:
+      - main  # หรือเมื่อมี PR ไปยัง main branch
+  workflow_dispatch:  # ให้รันได้จากปุ่มใน GitHub UI
 
 jobs:
   update-readme:
@@ -23,6 +27,8 @@ jobs:
       run: |
         git config --global user.email "changsansatid@gmail.com"
         git config --global user.name "sansatid"
-        git add top-langs.svg
-        git commit -m "Update top languages" || echo "No changes"
-        git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/sansatid/sansatid.git
+        git diff --quiet top-langs.svg || (
+          git add top-langs.svg
+          git commit -m "Update top languages"
+          git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/sansatid/sansatid.git
+        )
