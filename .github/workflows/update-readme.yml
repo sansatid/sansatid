@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Generate README stats
-        uses: yassinebridi/readme-stats-action@v1
+        uses: yassinebridi/readme-stats-action@v2
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           user: sansatid
