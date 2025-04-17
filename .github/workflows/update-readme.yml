@@ -1,28 +1,14 @@
-name: Update README
-
-on:
-  schedule:
-    - cron: "0 * * * *" # ทุกชั่วโมง
-  workflow_dispatch:
-
-jobs:
-  update-readme:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Generate GitHub Stats
-        uses: anuraghazra/github-readme-stats@v2 # ใช้เวอร์ชันที่เสถียร
-        with:
-          username: sansatid
-          hide: kotlin,java,vue,llvm
-          layout: compact
-          theme: transparent
-          hide_border: true
-          count_private: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+   - name: Generate GitHub Stats
+  uses: anuraghazra/github-readme-stats@latest # Replace 'v2' with 'latest' or another valid version
+  with:
+    username: sansatid
+    hide: kotlin,java,vue,llvm
+    layout: compact
+    theme: transparent
+    hide_border: true
+    count_private: true
+  env:
+    GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
 
       # เพิ่มขั้นตอนนี้เข้าไปที่นี่
