@@ -1,11 +1,8 @@
-name: Update README
+name: Update README with GitHub Stats
 
 on:
-  push:
-    branches:
-      - main
   schedule:
-    - cron: "0 0 * * *" # รันทุกวันตอนเที่ยงคืน UTC
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -15,19 +12,21 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Generate GitHub Stats Card
-        uses: anuraghazra/github-readme-stats@latest
+      - name: Generate README stats
+        uses: yassinebridi/readme-stats-action@v1
         with:
-          username: sansatid
+          github_token: ${{ secrets.GH_TOKEN }}
+          user: sansatid
           hide: kotlin,java,vue,llvm
           layout: compact
           theme: transparent
           hide_border: true
           count_private: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
-      - name: Get Repo Language Stats
+      - name: Commit and Push
         run: |
-          curl -H "Authorization: token ${{ secrets.GH_TOKEN }}" \
-            https://api.github.com/repos/sansatid/your-repo-languages
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+          git add README.md
+          git commit -m "chore: update README with stats" || echo "No changes to commit"
+          git push
