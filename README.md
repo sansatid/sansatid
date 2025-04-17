@@ -1,7 +1,7 @@
 # Hello World, i'm Chang, be very welcome
  
  ![](https://raw.githubusercontent.com/rahul-jha98/github-stats-transparent/output/generated/overview.svg)
- ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sansatid&hide=kotlin,java,vue,llvm&layout=compact&theme=transparent&hide_border=true)
+ ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sansatid&count_private=true&theme=transparent&hide_border=true)
  
  ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
  ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
