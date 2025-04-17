@@ -1,32 +1,26 @@
-name: Update README with GitHub Stats
+name: Update README
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 */12 * * *"
   workflow_dispatch:
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Generate README stats
-        uses: yassinebridi/readme-stats-action@v2
-        with:
-          github_token: ${{ secrets.GH_TOKEN }}
-          user: sansatid
-          hide: kotlin,java,vue,llvm
-          layout: compact
-          theme: transparent
-          hide_border: true
-          count_private: true
+      - name: Update README.md
+        run: |
+          echo "![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sansatid&hide=kotlin,java,vue,llvm&layout=compact&theme=transparent&hide_border=true&count_private=true)" > README.md
 
-      - name: Commit and Push
+      - name: Commit and push
         run: |
           git config --global user.email "you@example.com"
           git config --global user.name "Your Name"
           git add README.md
-          git commit -m "chore: update README with stats" || echo "No changes to commit"
+          git commit -m "Update README with top languages" || echo "No changes"
           git push
