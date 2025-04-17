@@ -1,17 +1,32 @@
-   - name: Generate GitHub Stats
-  uses: anuraghazra/github-readme-stats@latest # Replace 'v2' with 'latest' or another valid version
-  with:
-    username: sansatid
-    hide: kotlin,java,vue,llvm
-    layout: compact
-    theme: transparent
-    hide_border: true
-    count_private: true
-  env:
-    GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+name: Update README
 
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 * * *" # รันทุกวันตอนเที่ยงคืน UTC
+  workflow_dispatch:
 
-      # เพิ่มขั้นตอนนี้เข้าไปที่นี่
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Generate GitHub Stats Card
+        uses: anuraghazra/github-readme-stats@latest
+        with:
+          username: sansatid
+          hide: kotlin,java,vue,llvm
+          layout: compact
+          theme: transparent
+          hide_border: true
+          count_private: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
       - name: Get Repo Language Stats
         run: |
           curl -H "Authorization: token ${{ secrets.GH_TOKEN }}" \
